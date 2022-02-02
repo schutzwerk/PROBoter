@@ -7,6 +7,7 @@ The PROBoter is a hardware and software platform to automate embedded system sec
 
 The project consists of various components which can be found in individual subfolders of this repository:
 
+- [hardware](/hardware) Contains 3D models and construction data of the PROBoter hardware platform.
 - [publications](/publications) Contains publications related to the PROBoter. You can also find citation information here if you want to reference our work in other research publications.
 
 Other components will be released soon. Follow the [SCHUTZWERK PROBoter blog post series](https://schutzwerk.com/en/43/posts/proboter_01/) to get updates of the current development status and new component releases. So stay tuned... :)
