@@ -2,14 +2,14 @@
 
 This folder summarizes publications related to the PROBoter platform. If you would like to reference our work in a research publication, you can also find the corresponding BibTex entries here.
 
-## [PROBoter_thesis.pdf](/PROBoter_thesis.pdf)
+## [PROBoter_thesis.pdf](PROBoter_thesis.pdf)
 
 Master's thesis on automation of hardware-related security analyzes of embedded systems.
 In this thesis the PROBoter platform is introduced for the first time.
 
 Original title (German): **Automatisierung der hardwarenahen Sicherheitsanalyse von eingebetteten Systemen**.
 
-URL: <https://github.com/schutzwerk/PROBoter/publications/PROBoter_thesis.pdf>
+URL: <https://github.com/schutzwerk/PROBoter/blob/master/publications/PROBoter_thesis.pdf>
 
 Keywords:
 
