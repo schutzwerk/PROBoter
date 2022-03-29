@@ -1,0 +1,8 @@
+****************************************************************************
+Changes to the PROBoter hardware are documented, as for all other parts of
+the PROBOter platform, using the Github release mechanism.
+
+Available releases can be found here:
+https://github.com/schutzwerk/PROBoter/releases
+
+****************************************************************************

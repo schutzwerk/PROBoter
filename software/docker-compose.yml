@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+    pcb-analysis-server:
+        build: ./pcb-analysis
+        ports:
+            - "${LISTEN_ADDRESS}:5001:5001"
+

@@ -1,0 +1,4 @@
+instance/*
+train/*
+Dockerfile
+Makefile

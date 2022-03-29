@@ -58,3 +58,36 @@ Citation
   year      = {2021},
 }
 ```
+
+## [Visual analysis of printed circuit boards](http://dx.doi.org/10.18725/OPARU-40107)
+
+Bachelor's thesis created by Marco Günther in cooperation with SCHUTZWERK GmbH. It extends existing and new PCB image data sets with new sub-categories for integrated circuits allowing the identification of their respective package. Additionally, four categories for passive and miscellaneous electric components are introduced. The thesis also proposes optimized configurations for selected Neural Networks to analyze populated PCB image data.
+
+URL: <http://dx.doi.org/10.18725/OPARU-40107>
+
+Keywords:
+
+- Machine learning
+- Computer vision
+- Labels
+- Labeling
+- Annotations
+- IT-Security
+- Object detection
+- Printed circuit boards
+- Image datasets
+- Embedded hardware
+
+Citation
+
+```
+@article{Günther_2021,
+  title     = {Visual analysis of printed circuit boards},
+  url       = {https://oparu.uni-ulm.de/xmlui/handle/123456789/40183},
+  DOI       = {10.18725/OPARU-40107},
+  journal   = {Universität Ulm},
+  publisher = {Universität Ulm},
+  author    = {Günther, Marco},
+  year      = {2021}
+}
+```

@@ -1,0 +1,2 @@
+graft pcb_analysis/tf_models
+global-exclude *.pyc
