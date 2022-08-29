@@ -19,19 +19,19 @@ RUN python setup.py bdist_wheel && ls dist
 FROM python:3.10.6-slim-buster
 
 # Setup the working directory
-RUN mkdir /opt/pcb-analysis
-WORKDIR /opt/pcb-analysis
+RUN mkdir /opt/signal-analysis
+WORKDIR /opt/signal-analysis
 
 # Create the default instance folder
-RUN mkdir /opt/pcb-analysis/instance
+RUN mkdir /opt/signal-analysis/instance
 
-# Add a new non-root user "pcb-analysis" with user id 1337
-RUN useradd -m -u 1337 pcb-analysis
-RUN chown -R pcb-analysis:pcb-analysis .
+# Add a new non-root user "pcb-analysis" with user id 1338
+RUN useradd -m -u 1338 signal-analysis
+RUN chown -R signal-analysis:signal-analysis .
 
 # Change to non-root privilege
-USER pcb-analysis
-ENV PATH=$PATH:/home/pcb-analysis/.local/bin
+USER signal-analysis
+ENV PATH=$PATH:/home/signal-analysis/.local/bin
 
 # Copy the newly built package
 COPY --from=build dist/*.whl .
@@ -42,5 +42,5 @@ RUN pip install gunicorn
 # Install the package
 RUN pip install $(ls -1 *.whl)
 
-EXPOSE 5001
-CMD ["gunicorn", "--bind", "0.0.0.0:5001", "pcb_analysis.wsgi:app"]
+EXPOSE 5002
+CMD ["gunicorn", "--bind", "0.0.0.0:5002", "signal_analysis.wsgi:app"]

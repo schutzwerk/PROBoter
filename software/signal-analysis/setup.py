@@ -1,4 +1,4 @@
-# Copyright (C) 2022 SCHUTZWERK GmbH
+# Copyright (C) 2022  SCHUTZWERK GmbH
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,9 +22,9 @@ with open(Path(projectDir, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='pcb-analysis',
+    name='signal-analysis',
     version='1.0.0',
-    description='PROBoter - Visual PCB analysis microservice',
+    description='PROBoter - Voltage signal analysis service',
     long_description=long_description,
     long_description_content_type='text/markdown',
     classifiers=[
@@ -35,7 +35,7 @@ setup(
     ],
     keywords='PROBoter pentesting embedded automotive',
     url='https://github.com/schutzwerk/PROBoter',
-    author='fweber@SCHUTZWERK GmbH',
+    author='fschmid@SCHUTZWERK GmbH',
     author_email='info@schutzwerk.com',
     license='GNU General Public License v3 (GPLv3)',
     packages=find_packages(),
@@ -43,11 +43,11 @@ setup(
     install_requires=[
         'werkzeug==2.1.2',
         'flask',
-        'flask-cors'
+        'flask-cors',
         'flask-restx',
-        'tensorflow',
-        'opencv-python-headless',
-        'pytesseract',
+        'matplotlib',
+        'scipy',
+        'scikit-commpy',
     ],
     python_requires='>=3.10'
 )

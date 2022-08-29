@@ -74,6 +74,7 @@ disable=raw-checker-failed,
         missing-module-docstring,
         fixme
 
+
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
 # multiple time (only on the command line, not in the configuration file where
@@ -209,18 +210,27 @@ function-naming-style=snake_case
 #function-rgx=
 
 # Good variable names which should always be accepted, separated by a comma.
-good-names=i,
+#*************************
+# SCHUTZWERK_CUSTOM
+# - additional entry 'db'
+# - additional entry 'ws'
+#*************************
+good-names=a,
+           b,
+           i,
            j,
            k,
            l,
            m,
+           n,
            f,
-           w,
-           h,
            x,
            y,
            z,
            id,
+           db,
+           ws,
+           ex,
            Run,
            _
 
@@ -299,7 +309,7 @@ ignore-long-lines=^\s*(# )?<?https?://\S+>?$
 # Number of spaces of indent required inside a hanging or continued line.
 indent-after-paren=4
 
-# String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1
+# String used as indentation unit. This is usually "    " (4 spaces) or "	" (1
 # tab).
 indent-string='    '
 
@@ -472,7 +482,11 @@ preferred-modules=
 max-args=5
 
 # Maximum number of attributes for a class (see R0902).
-max-attributes=7
+#********************
+# SCHUTZWERK_CUSTOM
+# Increased for config classes that hold many attributes
+#********************
+max-attributes=13  # Default 7
 
 # Maximum number of boolean expressions in an if statement (see R0916).
 max-bool-expr=5
@@ -496,7 +510,10 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+#************************************
+# SCHUTZWERK_MOD, defaults to 2
+#************************************
+min-public-methods=1
 
 
 [CLASSES]

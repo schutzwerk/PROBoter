@@ -1,0 +1,370 @@
+[
+    {
+        "filename": "i2c.csv",
+        "results": [
+            {
+                "protocolName": "SPI",
+                "signals": {
+                    "clock": 0,
+                    "data1": null,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.0,
+                    "OneWire": 0.0
+                },
+                "encodingParameters": {},
+                "correlationRating": null
+            },
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.14285714285714285,
+                    "OneWire": 0.125
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 27777777,
+                    "Baud rate recognition rating": null,
+                    "Amount of stop bits": "Unknown",
+                    "Find-rating for identification of stop bits": 0,
+                    "Parity bit implemented": "Unknown",
+                    "Parity-bit recognition rate": 0
+                },
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "i2c_2.csv",
+        "results": [
+            {
+                "protocolName": "SPI",
+                "signals": {
+                    "clock": 0,
+                    "data1": null,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.0,
+                    "OneWire": 0.0
+                },
+                "encodingParameters": {},
+                "correlationRating": null
+            },
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.2857142857142857,
+                    "OneWire": 0.25
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 31250000,
+                    "Baud rate recognition rating": null,
+                    "Amount of stop bits": "Unknown",
+                    "Find-rating for identification of stop bits": 0,
+                    "Parity bit implemented": "Unknown",
+                    "Parity-bit recognition rate": 0
+                },
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "i2c__line_0_line_1.csv",
+        "results": [
+            {
+                "protocolName": "SPI",
+                "signals": {
+                    "clock": 0,
+                    "data1": null,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.0,
+                    "OneWire": 0.0
+                },
+                "encodingParameters": {},
+                "correlationRating": null
+            },
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.14285714285714285,
+                    "OneWire": 0.125
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 27777777,
+                    "Baud rate recognition rating": null,
+                    "Amount of stop bits": "Unknown",
+                    "Find-rating for identification of stop bits": 0,
+                    "Parity bit implemented": "Unknown",
+                    "Parity-bit recognition rate": 0
+                },
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "one_wire.csv",
+        "results": [
+            {
+                "protocolName": "OneWire",
+                "signals": {
+                    "clock": null,
+                    "data1": 0,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.2857142857142857,
+                    "OneWire": 0.75
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            },
+            {
+                "protocolName": "SignalType.GROUND",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": null,
+                    "SPI": null,
+                    "UART": null,
+                    "OneWire": null
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "spi_short.csv",
+        "results": [
+            {
+                "protocolName": "SPI",
+                "signals": {
+                    "clock": 0,
+                    "data1": null,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.0,
+                    "OneWire": 0.0
+                },
+                "encodingParameters": {},
+                "correlationRating": null
+            },
+            {
+                "protocolName": "OneWire",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.2857142857142857,
+                    "OneWire": 0.375
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "uart_01_baud_4800.csv",
+        "results": [
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 0,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 1.0,
+                    "OneWire": 0.375
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 4800,
+                    "Baud rate recognition rating": 1.025625,
+                    "Amount of stop bits": 1,
+                    "Find-rating for identification of stop bits": 1.0,
+                    "Parity bit implemented": false,
+                    "Parity-bit recognition rate": null,
+                    "Block length": 8
+                },
+                "correlationRating": -1.0
+            },
+            {
+                "protocolName": "SignalType.GROUND",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": null,
+                    "SPI": null,
+                    "UART": null,
+                    "OneWire": null
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "uart_01_baud_19200.csv",
+        "results": [
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 0,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 1.0,
+                    "OneWire": 0.25
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 19200,
+                    "Baud rate recognition rating": 1.0140625,
+                    "Amount of stop bits": 1,
+                    "Find-rating for identification of stop bits": 1.0,
+                    "Parity bit implemented": false,
+                    "Parity-bit recognition rate": null,
+                    "Block length": 8
+                },
+                "correlationRating": -1.0
+            },
+            {
+                "protocolName": "SignalType.GROUND",
+                "signals": {
+                    "clock": null,
+                    "data1": 1,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": null,
+                    "SPI": null,
+                    "UART": null,
+                    "OneWire": null
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "uart_03__line_0_index_0_2021-10-25_160419.csv",
+        "results": [
+            {
+                "protocolName": "UART",
+                "signals": {
+                    "clock": null,
+                    "data1": 0,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 1.0,
+                    "OneWire": 0.625
+                },
+                "encodingParameters": {
+                    "Signal inverted": false,
+                    "Baud rate": 115200,
+                    "Baud rate recognition rating": 1.0333940972222222,
+                    "Amount of stop bits": 1,
+                    "Find-rating for identification of stop bits": 1.0,
+                    "Parity bit implemented": false,
+                    "Parity-bit recognition rate": null,
+                    "Block length": 8
+                },
+                "correlationRating": -1.0
+            }
+        ]
+    },
+    {
+        "filename": "uart__line_0_index_0_2021-09-27_152126.csv",
+        "results": [
+            {
+                "protocolName": "OneWire",
+                "signals": {
+                    "clock": null,
+                    "data1": 0,
+                    "data2": null,
+                    "control": null
+                },
+                "identificationRatings": {
+                    "I2C": 0.0,
+                    "SPI": 0.0,
+                    "UART": 0.7142857142857143,
+                    "OneWire": 0.75
+                },
+                "encodingParameters": {},
+                "correlationRating": -1.0
+            }
+        ]
+    }
+]

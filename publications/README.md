@@ -91,3 +91,34 @@ Citation
   year      = {2021}
 }
 ```
+
+## [Algorithm for identification of bus protocols](https://doi.org/10.13154/294-9031)
+
+This Master's thesis by Florian Schmid, which was also created in cooperation with SCHUTZWERK GmbH, describes an algorithm to evaluate voltages which occur on an assessed PCB. The algorithm attempts to identify the functionality, originating protocol and protocol transmission parameters of a measured voltage dataset. While the previous publications established the hardware and visual analysis capability of the PROBoter, this thesis extends its functionality by the evaluation of voltage signals.
+
+URL: <https://doi.org/10.13154/294-9031>
+
+Keywords:
+
+- IT-Security
+- Embedded hardware
+- Printed circuit boards
+- Black box penetration testing
+- Reverse Engineering
+- Physical protocols
+- Protocol characterization
+- Automated signal analysis
+- Statistical analysis 
+- Delta Analysis
+
+Citation
+
+```
+@mastersthesis{Schmid2022,
+  author      = {Florian Schmid},
+  title       = {Algorithm for identification of bus protocols},
+  type        = {masterthesis},
+  school      = {Ruhr-Universit{\"a}t Bochum, Universit{\"a}tsbibliothek},
+  year        = {2022},
+}
+```

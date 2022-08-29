@@ -4,4 +4,8 @@ services:
         build: ./pcb-analysis
         ports:
             - "${LISTEN_ADDRESS}:5001:5001"
+    signal-analysis-server:
+        build: ./signal-analysis
+        ports:
+            - "${LISTEN_ADDRESS}:5002:5002"
 
