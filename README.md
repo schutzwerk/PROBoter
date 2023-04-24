@@ -7,6 +7,7 @@ The PROBoter is a hardware and software platform to automate embedded system sec
 
 The project consists of various components which can be found in individual subfolders of this repository:
 
+- [firmware](/firmware) Contains the firmware running on the 3D printer boards driving the PROBoter hardware platform.
 - [hardware](/hardware) Contains 3D models and construction data of the PROBoter hardware platform.
 - [image_data_sets](/image_data_sets) Contains image data sets to train or validate algorithms for IC and pin detection.
 - [publications](/publications) Contains publications related to the PROBoter. You can also find citation information here if you want to reference our work in other research publications.
