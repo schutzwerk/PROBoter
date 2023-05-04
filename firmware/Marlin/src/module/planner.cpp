@@ -1696,8 +1696,13 @@ void Planner::quick_stop() {
 
   TERN_(HAS_WIRED_LCD, clear_block_buffer_runtime()); // Clear the accumulated runtime
 
-  // Make sure to drop any attempt of queuing moves for 1 second
-  cleaning_buffer_counter = TEMP_TIMER_FREQUENCY;
+  #if ENABLED(PROBOTER)
+    // Make sure to drop any attempt of queuing moves for 10 milliseconds
+    cleaning_buffer_counter = 10;
+  #else
+    // Make sure to drop any attempt of queuing moves for 1 second
+    cleaning_buffer_counter = TEMP_TIMER_FREQUENCY;
+  #endif
 
   // Reenable Stepper ISR
   if (was_enabled) stepper.wake_up();
