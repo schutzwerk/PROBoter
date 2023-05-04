@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[tool.pytest.ini_options]
+markers = [
+    "real_hardware_test: marks tests that require real hardware (deselect with '-m \"not real_hardware_test\"')",
+]

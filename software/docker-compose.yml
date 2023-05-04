@@ -1,11 +1,89 @@
 version: "3.9"
-services:
-    pcb-analysis-server:
-        build: ./pcb-analysis
-        ports:
-            - "${LISTEN_ADDRESS}:5001:5001"
-    signal-analysis-server:
-        build: ./signal-analysis
-        ports:
-            - "${LISTEN_ADDRESS}:5002:5002"
 
+services:
+  reverse-proxy:
+    image: nginx
+    volumes:
+      - ./reverse-proxy/nginx.conf:/etc/nginx/templates/default.conf.template:ro
+      - ./reverse-proxy/certs/fullchain.pem:/etc/nginx/ssl/live/proboter/fullchain.pem:ro
+      - ./reverse-proxy/certs/privkey.pem:/etc/nginx/ssl/live/proboter/privkey.pem:ro
+    environment:
+      - WEB_UI_ROOT=web-ui
+      - PROJECT_STORAGE_ROOT=project-storage:5000
+      - PCB_ANALYSIS_ROOT=pcb-analysis:5001
+      - SIGNAL_ANALYSIS_ROOT=signal-analysis:5002
+      - HARDWARE_CONTROL_ROOT=hardware-control:5003
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      web-ui:
+        condition: service_healthy
+      project-storage:
+        condition: service_healthy
+      pcb-analysis:
+        condition: service_healthy
+      signal-analysis:
+        condition: service_healthy
+      hardware-control:
+        condition: service_healthy
+    restart: always
+
+  web-ui:
+    build: ./web-ui
+    healthcheck:
+      test: ["CMD", "curl", "http://web-ui"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: always
+
+  project-storage:
+    build: ./project-storage
+    volumes:
+      - project-data:/var/project-storage:rw
+    healthcheck:
+      test: ["CMD", "curl", "http://project-storage:5000/api/v1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: always
+
+  pcb-analysis:
+    build: ./pcb-analysis
+    healthcheck:
+      test: ["CMD", "curl", "http://pcb-analysis:5001/api/v1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: always
+
+  signal-analysis:
+    build: ./signal-analysis
+    healthcheck:
+      test: ["CMD", "curl", "http://signal-analysis:5002/api/v1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: always
+
+  hardware-control:
+    build: ./hardware-control
+    privileged: true
+    volumes:
+      - /dev:/dev
+      - proboter-data:/var/proboter:rw
+    environment:
+      - QUART_HARDWARE_BACKEND=usb
+      - QUART_INSTANCE_PATH=/var/proboter
+      - QUART_STORAGE_BACKEND_URL=http://project-storage:5000/api/v1
+    healthcheck:
+      test: ["CMD", "curl", "http://hardware-control:5003/api/v1"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: always
+
+volumes:
+  project-data:
+  proboter-data:

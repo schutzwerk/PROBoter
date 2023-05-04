@@ -1,0 +1,183 @@
+// Define your variable overrides here
+$enable-shadows: false;
+$enable-gradients: false;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 456px,
+  md: 789px,
+  lg: 999px,
+  xl: 1234px,
+  xxl: 1400px,
+);
+$bv-enable-table-stacked: false;
+$primary: #34c0de;
+$red: red;
+
+// Include Bootstrap and BootstrapVue SCSS files
+@import "bootstrap/scss/bootstrap.scss";
+
+// Dark theme background colors
+$bg-00dp: #121212;
+$bg-01dp: #1c1c1c;
+$bg-02dp: #212121;
+$bg-03dp: #232323;
+$bg-04dp: #262626;
+$bg-06dp: #2c2c2c;
+$bg-08dp: #2d2d2d;
+$bg-12dp: #313131;
+$bg-16dp: #343434;
+$bg-24dp: #363636;
+
+$fg-00dp: white;
+$fg-01dp: white;
+$fg-02dp: white;
+$fg-03dp: white;
+$fg-04dp: white;
+$fg-06dp: white;
+$fg-08dp: white;
+$fg-12dp: white;
+$fg-16dp: white;
+$fg-24dp: white;
+
+$fg-primary: black;
+
+// Containers for different levels
+.dp-00 {
+  color: $fg-00dp;
+  background-color: $bg-00dp;
+}
+
+.dp-01 {
+  color: $fg-01dp;
+  background-color: $bg-01dp;
+}
+
+.dp-02 {
+  color: $fg-02dp;
+  background-color: $bg-02dp;
+}
+
+.dp-03 {
+  color: $fg-03dp;
+  background-color: $bg-03dp;
+}
+
+.dp-04 {
+  color: $fg-04dp;
+  background-color: $bg-04dp;
+}
+
+.dp-06 {
+  color: $fg-06dp;
+  background-color: $bg-06dp;
+}
+
+.dp-08 {
+  color: $fg-08dp;
+  background-color: $bg-08dp;
+  fill: $bg-08dp;
+}
+
+.dp-12 {
+  color: $fg-12dp;
+  background-color: $bg-12dp;
+}
+
+.dp-16 {
+  color: $fg-16dp;
+  background-color: $bg-16dp;
+}
+
+.dp-24 {
+  color: $fg-24dp;
+  background-color: $bg-24dp;
+}
+
+// General style overrides and custom classes
+body {
+  color: $fg-00dp;
+  background-color: $bg-00dp;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.dp-06.surface-container {
+  border: 1px solid $bg-24dp;
+}
+
+.surface-container:hover {
+  background-color: rgba(white, $alpha: 0.04);
+}
+
+/******************************************
+/* Bootstrap-specific style overwrites
+*******************************************/
+.navbar,
+.navbar-dark {
+  background-color: $bg-06dp;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: $fg-04dp;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: $primary;
+  background-color: $bg-04dp;
+}
+
+.navbar-brand {
+  color: $fg-00dp;
+}
+
+.navbar-brand:hover {
+  color: $primary;
+}
+
+.nav-link.router-link-active {
+  color: $primary;
+  border: 1px solid white;
+}
+
+.btn.router-link-active.router-link-exact-active {
+  color: $fg-primary;
+  background-color: $primary;
+}
+
+/******************************************
+/* Generic animations
+*******************************************/
+.rotate {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

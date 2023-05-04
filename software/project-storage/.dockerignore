@@ -1,0 +1,8 @@
+data/*
+dummy_data/*
+instance/*
+
+.vscode/*
+
+Dockerfile
+Makefile

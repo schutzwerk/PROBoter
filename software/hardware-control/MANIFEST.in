@@ -1,0 +1,2 @@
+graft proboter/static
+global-exclude *.pyc
